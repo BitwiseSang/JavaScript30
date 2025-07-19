@@ -89,8 +89,8 @@
       // Redux world
 
       const newComments = [
-        comments.slice(0, commentIndex),
-        comments.slice(commentIndex + 1),
+        ...comments.slice(0, commentIndex),
+        ...comments.slice(commentIndex + 1),
       ];
     </script>
   </body>
