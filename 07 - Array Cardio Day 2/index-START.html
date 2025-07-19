@@ -57,6 +57,23 @@
       // delete the comment with the ID of 823423
       console.group('Find index of comment with the ID of 823423');
 
+      const commentIndex = console.log(
+        comments.findIndex((comment) => comment.id === 823423)
+      );
+
+      // findIndex Implementation
+
+      console.log(comments.splice(commentIndex, 1));
+
+      // OR
+      console.log(
+        comments.splice(
+          comments.findIndex((comment) => comment.id === 823423),
+          1
+        )
+      );
+
+      // Index Of Implementation
       console.log(
         comments.splice(
           comments.map((comment) => comment.id).indexOf(823423),
